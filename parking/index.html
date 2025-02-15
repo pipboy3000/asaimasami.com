@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>中須町83駐車場</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        background-color: #fff;
+        color: #303030;
+        line-height: 1.4;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* フッターを下部に配置したい場合などに有効 */
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 100%;
+        margin: 0 auto;
+        flex: 1; /* フッター以外の空間を埋めるためにフレックス伸縮 */
+      }
+
+      .heading {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem;
+        border-bottom: 1px solid #d9d9d9;
+      }
+
+      .contents {
+        padding: 1.5rem;
+        gap: 3rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contents > section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .available {
+        color: #2ecc71;
+        font-weight: bold;
+      }
+
+      .unavailable {
+        color: #e74c3c;
+        font-weight: bold;
+      }
+
+      .note {
+        font-size: 0.875rem;
+        color: #666;
+      }
+
+      .price-info {
+        padding-left: 1rem;
+      }
+
+      .highlight {
+        color: #e74c3c;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      .inquiry-button {
+        display: inline-flex;
+        /align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        width: 100%;
+        background-color: #2ecc71;
+        color: #fff;
+        padding: 12px;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 1px solid #02542d;
+      }
+
+      .inquiry-button:hover {
+        opacity: 0.9;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #d9d9d9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <svg
+          class="icon"
+          width="32"
+          height="33"
+          viewBox="0 0 32 33"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.57143 0.285645C2.05 0.285645 0 2.33564 0 4.85707V27.7142C0 30.2356 2.05 32.2856 4.57143 32.2856H27.4286C29.95 32.2856 32 30.2356 32 27.7142V4.85707C32 2.33564 29.95 0.285645 27.4286 0.285645H4.57143ZM13.7143 16.2856H17.1429C18.4071 16.2856 19.4286 15.2642 19.4286 13.9999C19.4286 12.7356 18.4071 11.7142 17.1429 11.7142H13.7143V16.2856ZM17.1429 20.8571H13.7143V23.1428C13.7143 24.4071 12.6929 25.4285 11.4286 25.4285C10.1643 25.4285 9.14286 24.4071 9.14286 23.1428V18.5714V9.99993C9.14286 8.42136 10.4214 7.14279 12 7.14279H17.1429C20.9286 7.14279 24 10.2142 24 13.9999C24 17.7856 20.9286 20.8571 17.1429 20.8571Z"
+            fill="black"
+          />
+        </svg>
+        <h1 class="heading">中須町83駐車場</h1>
+      </header>
+
+      <div class="contents">
+        <section>
+          <h2 class="heading">駐車場の空き状況</h2>
+          <div>
+            <p>
+              <span class="available">2台分空きあり</span>
+              <br />
+              <span class="unavailable">角地は契約済み</span>
+              <br />
+              <span class="note">※この情報は2025年2月時点のものです</span>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="heading">料金案内</h2>
+          <div>
+            <ul class="price-info">
+              <li>月極駐車場　月<span class="highlight">7,000</span>円</li>
+              <li>日貸し駐車場　24時間<span class="highlight">400</span>円</li>
+            </ul>
+          </div>
+        </section>
+
+        <a href="tel:0123456789" class="inquiry-button">
+          <svg
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_7_127)">
+              <path
+                d="M8.22969 1.72449C7.86875 0.852619 6.91719 0.388557 6.00781 0.636994L1.88281 1.76199C1.06719 1.98699 0.5 2.72762 0.5 3.57137C0.5 15.1682 9.90313 24.5714 21.5 24.5714C22.3438 24.5714 23.0844 24.0042 23.3094 23.1886L24.4344 19.0636C24.6828 18.1542 24.2188 17.2026 23.3469 16.8417L18.8469 14.9667C18.0828 14.6479 17.1969 14.8682 16.6766 15.5104L14.7828 17.8214C11.4828 16.2604 8.81094 13.5886 7.25 10.2886L9.56094 8.39949C10.2031 7.87449 10.4234 6.99324 10.1047 6.22918L8.22969 1.72918V1.72449Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_7_127">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0.5 0.571289)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          電話で問い合わせる
+        </a>
+      </div>
+    </div>
+
+    <footer>© 2025 Asai Masami</footer>
+  </body>
+</html>
